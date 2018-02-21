@@ -20,7 +20,7 @@ def pytest_configure(config):
         'sentry_plugins.gitlab', 'sentry_plugins.pagerduty', 'sentry_plugins.pivotal',
         'sentry_plugins.pushover', 'sentry_plugins.jira', 'sentry_plugins.segment',
         'sentry_plugins.sessionstack', 'sentry_plugins.slack', 'sentry_plugins.splunk',
-        'sentry_plugins.victorops',
+        'sentry_plugins.victorops','sentry_plugins.pushsafer',
     )
 
     # TODO(dcramer): we need a PluginAPITestCase that can do register/unregister
@@ -36,6 +36,7 @@ def pytest_configure(config):
     from sentry_plugins.pagerduty.plugin import PagerDutyPlugin
     from sentry_plugins.pivotal.plugin import PivotalPlugin
     from sentry_plugins.pushover.plugin import PushoverPlugin
+	from sentry_plugins.pushsafer.plugin import PushsaferPlugin
     from sentry_plugins.segment.plugin import SegmentPlugin
     from sentry_plugins.sessionstack.plugin import SessionStackPlugin
     from sentry_plugins.slack.plugin import SlackPlugin
