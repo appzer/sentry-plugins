@@ -36,7 +36,7 @@ def pytest_configure(config):
     from sentry_plugins.pagerduty.plugin import PagerDutyPlugin
     from sentry_plugins.pivotal.plugin import PivotalPlugin
     from sentry_plugins.pushover.plugin import PushoverPlugin
-	from sentry_plugins.pushsafer.plugin import PushsaferPlugin
+    from sentry_plugins.pushsafer.plugin import PushsaferPlugin
     from sentry_plugins.segment.plugin import SegmentPlugin
     from sentry_plugins.sessionstack.plugin import SessionStackPlugin
     from sentry_plugins.slack.plugin import SlackPlugin
